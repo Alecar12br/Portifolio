@@ -1,0 +1,254 @@
+body{
+    background-color: #eafff8;
+    font-family: Arial, sans-serif;
+   
+    margin: 0px;
+}
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px ;
+    background-color: white;
+    border: 5px solid rgb(172, 172, 172);
+    margin: 0px 20px 0px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0.1, 0.1, 0.1, 0.1);
+
+}
+main {
+    
+    border: 5px solid rgb(172, 172, 172);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+section#inicio
+{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding-top: 50px;  
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding-bottom: 60px;
+    background-color: #86858528;
+}
+
+#inicio h1 {
+    font-size: 3em;
+    font-weight: 700;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: #86858528 5px solid;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #d4d4d438;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+@media (max-width: 780px) {
+
+    section#inicio {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+
+
+nav ul {
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+
+}
+
+.menu-toggle {
+  
+    display: block;
+    background: block;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+
+}
+
+@media (min-width: 600px) {
+
+    nav ul {
+        display: flex;
+
+    }
+    .menu-toggle {
+        display: none;
+
+    }
+
+}
+
+.cards {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    gap : 20px
+
+}
+
+.box {
+    display : flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+
+}
+
+.cardsProjects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+
+#sobreMim {
+    margin-top: 50px;
+    padding-left: 96px;
+    padding-right: 96px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width: 768px) {
+
+    #sobreMim {
+        padding: 0px;
+        margin-top: 10px;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+
+
+}
+}
+
+h2 {
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+#habilidades {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-left: 96px;
+    padding-right: 96px;
+    
+}
+
+#habilidades h2 {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px; 
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#skillsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+@media (max-width: 768px) {
+
+    #habilidades {
+        
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        
+    }
+
+    #skillsContainer {
+        flex-direction: column ;
+        width: 100%;
+       padding : 0px;
+
+}
+}
+
+.skillClass{
+    font: bold 1.2em Arial, sans-serif;
+    display: block;
+}
+.skillClass ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    padding-left: 20px;
+}   
+
+.skillClass li {
+    text-align: center;
+    display: none;
+    margin-bottom: 10px;
+}
+
+.skillClass p {
+    font-size: 1.3em;
+    line-height: 1.5;
+    border: 5px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #8FA8EC;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.skillClass:active li {
+    display: block;
+}
+
+
+
